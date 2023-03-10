@@ -10,21 +10,21 @@ class test_flutter extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(),
       drawer: Drawer(),
-      body:Center(
-        chid:list(
-          activeColor: Colors.red,
+      body:Center(child: Row(
+        children:[
+         Text("هل تريد تشغيل الاشعارات"),
+          Switch(
+             activeColor: Colors.red,
           activeTrackColor: Colors.blue,
           inactiveTrackColor: Colors.black,
           inactiveThumbColor: Colors.green,
-
-          
-          value: notify, 
-          onChanged: (val){
-          SetState((){
+            value: notify, onChanged: (val){
+          setState((){
 
             notify=val ;
             print(notify);
-
+]
+          
           });
         } ),
        

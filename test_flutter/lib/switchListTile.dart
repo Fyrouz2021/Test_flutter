@@ -23,7 +23,7 @@ class test_flutter extends StatelessWidget{
           controlAffinity: ListTileControlAffinity.leading,
           value: notify,
            onChanged: (val){
-          SetState((){
+         setState((){
 
             notify=val ;
             print(notify);}
